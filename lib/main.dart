@@ -134,8 +134,8 @@ import 'package:flutter/material.dart';
     );
 
 }*/
-//column and rows
-void main(){
+//column 
+/*void main(){
     runApp(
       MaterialApp(
         home:Scaffold(
@@ -172,5 +172,41 @@ void main(){
       
     );
 
+}*/
+//rows 
+void main(){
+    runApp(
+      MaterialApp(
+        home:Scaffold(
+          body:SafeArea(
+            child:Row(
+              mainAxisAlignment:MainAxisAlignment.spaceEvenly ,
+              children:[
+                Container(
+                  
+                  color:Colors.indigo,
+                  padding:EdgeInsets.all(10),
+                  child:Text("Google",style:TextStyle(fontSize:26),),
+
+                  ),
+                  Container(
+                  padding:EdgeInsets.all(10),
+                  color:Colors.indigo,
+                  child:Text("Google",style:TextStyle(fontSize:26),),
+
+                  ),
+                   Container(
+                  padding:EdgeInsets.all(10),
+                  color:Colors.indigo,
+                  child:Text("Google",style:TextStyle(fontSize:26),),
+                  ), 
+              ],
+           
+            ),
+            ),
+          ),
+        )
+    );
 }
+
 
