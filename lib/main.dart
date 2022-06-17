@@ -174,7 +174,7 @@ import 'package:flutter/material.dart';
 
 }*/
 //rows 
-void main(){
+/*void main(){
     runApp(
       MaterialApp(
         home:Scaffold(
@@ -208,5 +208,39 @@ void main(){
         )
     );
 }
+*/
+//Icon widget
 
-
+void main(){
+    runApp(
+      MaterialApp(
+        home:Scaffold(
+          body:SafeArea(
+            child:Column(
+              children: [
+                Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                  Icon(Icons.fingerprint,size:40,color:Colors.black,),
+                  Text("security",style:TextStyle(fontSize:25)),
+                ],),
+                   Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                  Icon(Icons.account_circle,size:40,color:Colors.black,),
+                  Text("Accounts",style:TextStyle(fontSize:25)),
+                ],),
+                 Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                  Icon(Icons.alarm,size:40,color:Colors.black,),
+                  Text("clock",style:TextStyle(fontSize:25)),
+                ],),
+                
+              ], 
+            ),
+            ),
+          ),
+        )
+    );
+}
