@@ -93,7 +93,7 @@ import 'package:flutter/material.dart';
 }
 */
 //create a container contains Text Flutter at the center.
-void main(){
+/*void main(){
   runApp(
     MaterialApp( 
       home:Scaffold(
@@ -114,4 +114,63 @@ void main(){
    
   )
   );
+}*/
+//padding and margin
+/*void main(){
+    runApp(
+      MaterialApp(
+        home:Scaffold(
+          body:SafeArea(
+            child:Container(
+              padding:EdgeInsets.all(20),
+              margin:EdgeInsets.all(30),
+              color:Colors.blue,
+              width:300,height:100,
+              child:Text("this is flutter",style:TextStyle(fontSize: 26,fontWeight: FontWeight.bold),)
+            ),
+            ),
+        ),
+      )
+    );
+
+}*/
+//column and rows
+void main(){
+    runApp(
+      MaterialApp(
+        home:Scaffold(
+          body:SafeArea(
+            child:Column(
+              children:[
+                Container(
+                  padding:EdgeInsets.all(10),
+                  color:Colors.cyan,
+                  margin:EdgeInsets.only(bottom:10),
+                  child:Text("this is container",style:TextStyle(fontSize:26),),
+
+                  ),
+                  Container(
+                  padding:EdgeInsets.all(10),
+                  color:Colors.cyan,
+                  margin:EdgeInsets.only(bottom:10),
+                  child:Text("this is container",style:TextStyle(fontSize:26),),
+
+                  ),
+                   Container(
+                  padding:EdgeInsets.all(10),
+                  color:Colors.cyan,
+                  margin:EdgeInsets.only(bottom:10),
+                  child:Text("this is container",style:TextStyle(fontSize:26),),
+
+                  ), 
+              ],
+           
+            ),
+            ),
+          ),
+        )
+      
+    );
+
 }
+
