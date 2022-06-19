@@ -210,7 +210,7 @@ import 'package:flutter/material.dart';
 }
 */
 //Icon widget
-
+/* 
 void main(){
     runApp(
       MaterialApp(
@@ -243,4 +243,111 @@ void main(){
           ),
         )
     );
+}*/
+//create an app with a image Google and write google search engine.
+/*void main(){
+  runApp(
+   MaterialApp(
+    home:Scaffold(
+       body:Center(child: 
+       Column(
+        mainAxisAlignment:MainAxisAlignment.center,
+        
+        children:[
+          
+          Image(image:NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png"),width:300),
+          SizedBox(
+            width:5
+            ),
+          Text("google search engine",style:TextStyle(fontSize: 25),
+          ),
+        ],
+
+       ),
+       ),
+    ),
+   )
+  );
+}*/
+//cards (pizza app)
+void main(){
+  runApp(
+   MaterialApp(
+    home:Scaffold(
+       body:SafeArea(child: 
+       Column(
+         children:[
+          Card(
+           shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(20)),
+           color:Colors.deepOrangeAccent,
+           margin:EdgeInsets.all(10),
+           child:Row(children: [
+            SizedBox(width:20),
+            Image(image:NetworkImage("https://i.ytimg.com/vi/N5t8ToHtk5U/maxresdefault.jpg"),width:150,height:140,),
+            SizedBox(width:30),
+            Text("paneer pizza",style:TextStyle(fontSize: 30),),
+          
+           ],
+           ),
+
+
+          ),
+          
+           Card(
+           shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(20)),
+           color:Colors.deepOrangeAccent,
+           margin:EdgeInsets.all(10),
+           child:Row(children: [
+            SizedBox(width:20),
+            Image(image:NetworkImage("https://www.brotherskitchen.in/wp-content/uploads/2021/03/farmhouse-pizza-vegetarian-pizza-with-mouth-watering-toppings_1024-768-600x450.jpg"),width:150,height:140,),
+            SizedBox(width:30),
+            Text("farmhouse",style:TextStyle(fontSize: 30),),
+          
+           ],
+           ),
+
+
+          ),
+
+           Card(
+           shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(20)),
+           color:Colors.deepOrangeAccent,
+           margin:EdgeInsets.all(10),
+           child:Row(children: [
+            SizedBox(width:20),
+            Image(image:NetworkImage("https://pbs.twimg.com/media/BL5Z8p0CMAAvCQ_.jpg:large"),width:150,height:140,),
+            SizedBox(width:30),
+            Text("Margherita",style:TextStyle(fontSize: 30),),
+          
+           ],
+           ),
+
+
+          ),
+
+           Card(
+           shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(20)),
+           color:Colors.deepOrangeAccent,
+           margin:EdgeInsets.all(10),
+           child:Row(children: [
+            SizedBox(width:20),
+            Image(image:NetworkImage("https://pbs.twimg.com/media/C0InNcdXEAAb-hN.jpg"),width:150,height:140,),
+            SizedBox(width:30),
+            Text("pepperoni",style:TextStyle(fontSize: 30),),
+          
+           ],
+           ),
+
+
+          ),
+
+         ],
+          
+         
+
+       ),
+       ),
+    ),
+   )
+  );
 }
