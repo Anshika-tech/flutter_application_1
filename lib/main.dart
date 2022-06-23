@@ -210,8 +210,8 @@ import 'package:flutter/material.dart';
 }
 */
 //Icon widget
-/* 
-void main(){
+
+/*void main(){
     runApp(
       MaterialApp(
         home:Scaffold(
@@ -270,7 +270,7 @@ void main(){
   );
 }*/
 //cards (pizza app)
-void main(){
+/*void main(){
   runApp(
    MaterialApp(
     home:Scaffold(
@@ -285,7 +285,8 @@ void main(){
             SizedBox(width:20),
             Image(image:NetworkImage("https://i.ytimg.com/vi/N5t8ToHtk5U/maxresdefault.jpg"),width:150,height:140,),
             SizedBox(width:30),
-            Text("paneer pizza",style:TextStyle(fontSize: 30),),
+            Text("paneer pizza",style:TextStyle(fontSize: 30),
+            ),
           
            ],
            ),
@@ -350,4 +351,17 @@ void main(){
     ),
    )
   );
+}*/
+//import 'package:flutter/material.dart';
+/*import 'MyApp.dart';
+void main(){
+  runApp(MyApp());
+  
 }
+*/
+import 'ButtonDemo.dart';
+void main(){
+  runApp(ButtonDemo());
+  
+}
+
