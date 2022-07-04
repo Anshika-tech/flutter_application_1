@@ -3,6 +3,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screens.dart/HomeScreen.dart';
 //print "hello world " at center.
 /*void main(){
      runApp(
@@ -359,9 +360,48 @@ void main(){
   
 }
 */
-import 'ButtonDemo.dart';
+//import 'ButtonDemo.dart';
+//import 'MenusDemo.dart';
+import 'package:flutter_application_1/Screens.dart/Screen0.dart';
+import 'package:flutter_application_1/Screens.dart/Screen1.dart';
+import 'package:flutter_application_1/Screens.dart/Screen2.dart';
+
+/*void main(){
+  //runApp(ButtonDemo());
+  //runApp(MenuDemo());
+  runApp(
+    MaterialApp(
+     // home:HomeScreen(),
+      /*routes: {
+        's0':(context)=> Screen0(title:"Settings"),
+        's1':(context)=> Screen1(title:"Gallery"),
+        's2':(context)=> Screen2(title:"About Phone"),
+      }*/
+      ,)
+  );
+  
+}*/
+
+import 'project/Screens1.dart';
+import 'BottomNavigationBar/BottomNavigation.dart';
+import 'ListTile/ListTileNavigation.dart';
+import 'TabBar.dart';
+import 'WhatsApp.dart';
 void main(){
-  runApp(ButtonDemo());
+  //runApp(ButtonDemo());
+  //runApp(MenuDemo());
+  runApp(
+    MaterialApp(
+      //home:Screens1(),
+      //home:BottomNavigation(),
+      //home:ListTileDemo(),
+      //home:MyTabBar(),
+      home:WhatsAppNavigator(),
+    )
+  );
   
 }
+
+
+
 
